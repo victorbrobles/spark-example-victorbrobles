@@ -31,6 +31,7 @@ public class MockitoTests {
 		assertEquals(10, list.size()); // Primera llamada
 		assertEquals(20, list.size()); // Segunda llamada
 		assertEquals(20, list.size()); // Tercera llamada y 
+		assertEquals(20, list.size());
 		      						  // subsiguientes devuelven el mismo valor
 		
 		verify(list, times(3)).size();
